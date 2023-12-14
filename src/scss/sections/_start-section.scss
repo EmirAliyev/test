@@ -2,21 +2,15 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: url("/images/main-background.png"), #d3d3d3;
+  background: url("/images/back-group.png"), #d3d3d3;
   background-size: cover;
   background-size: 100vw 100vh;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  &-bg {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(
-      95deg,
-      #100a19 5.77%,
-      rgba(16, 10, 25, 0.45) 96.84%
-    );
-  }
+
+  z-index: 3;
+
   .nav {
     position: absolute;
     right: 0;
@@ -35,35 +29,14 @@
     }
   }
 
-  &__filter {
-    width: 100%;
-    height: 120vh;
-    position: absolute;
-    top: 0%;
-  }
-
-  .start-section-top-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 26.5625rem;
-    height: 11.75rem;
-    z-index: 4;
-  }
-  .start-section-bottom-right {
-    position: absolute;
-    bottom: 0;
-    right: 4.25rem;
-    width: 24.25rem;
-    height: 9.0625rem;
-  }
   .start-section-bottom-snake {
-    width: 158.6841rem;
+    object-fit: cover;
+    width: 108rem;
     height: 33.7888rem;
     position: absolute;
-    bottom: -20rem;
-    left: 4.8rem;
-    z-index: 2;
+    bottom: -10rem;
+    left: 0rem;
+    z-index: 1;
   }
   &_coming-soon {
     display: flex;
@@ -138,57 +111,18 @@
       }
     }
   }
-
-  .radial-green {
-    position: absolute;
-    top: -35vh;
-    right: -15vw;
-    width: 77.25rem;
-    height: 77.25rem;
-    border-radius: 77.25rem;
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(27, 180, 108, 0.35) 0%,
-      rgba(27, 180, 108, 0) 100%
-    );
-  }
-  .radial-blue {
-    position: absolute;
-    width: 90vw;
-    height: 90vh;
-    border-radius: 84rem;
-    bottom: -30%;
-    left: -17%;
-    z-index: 2;
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      #3400d0 0%,
-      rgba(52, 0, 208, 0) 100%
-    );
-  }
 }
 
 @media (max-width: $mob) {
   .start-section {
-    &__filter {
-      width: 300%;
-      right: -15%;
-      position: absolute;
-    }
-
-    .radial-blue {
-      top: unset;
-      width: 200%;
-      height: 150vh;
-      bottom: -70%;
-      left: -90%;
-    }
-    .radial-green {
-      width: 200%;
-      height: 150vh;
-      top: -70%;
-      right: -90%;
-    }
+    width: 100vw;
+    height: 100vh;
+    background: url("/images/back-group-mob.png");
+    background-size: cover;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 
     .nav {
       padding: 1.25rem 1.25rem 0.4375rem 1.25rem;
@@ -204,25 +138,10 @@
       }
     }
 
-    .start-section-top-left-mob {
-      position: absolute;
-      top: 8.69%;
-      width: 109px;
-      height: 179px;
-      z-index: 4;
-    }
-    .start-section-bottom-right-mob {
-      position: absolute;
-      width: 67px;
-      height: 179px;
-      bottom: 22.42%;
-      right: 0;
-      z-index: 4;
-    }
     .start-section-bottom-snake {
       width: 95.173rem;
       height: 20.2653rem;
-      bottom:0
+      bottom: 0;
     }
 
     &_coming-soon {

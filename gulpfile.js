@@ -39,7 +39,7 @@ const renameJS = ({ dirname, basename, extname }) => ({
 gulp.task("deploy", function () {
   return gulp.src("./dist/**/*").pipe(
     deploy({
-      remoteUrl: "https://github.com/EmirAliyev/retina_gsap.git",
+      remoteUrl: "https://github.com/EmirAliyev/is-cooming.git",
       branch: "main",
     })
   );
