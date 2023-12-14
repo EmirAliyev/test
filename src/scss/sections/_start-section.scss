@@ -2,14 +2,21 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: url("/images/back-group.png");
-  background-size: cover;
-  background-size: 100vw 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
 
-  z-index: 3;
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  &-bg-mob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
 
   .nav {
     position: absolute;
