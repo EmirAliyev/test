@@ -1,0 +1,82 @@
+@import "../fonts/archivo.scss";
+@import "../fonts/chakra-petch.scss";
+@import "./helpers/_mixins";
+@import "./helpers/_variables";
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  letter-spacing: inherit;
+}
+
+a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font: inherit;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+html {
+  font-size: 0.925925vw;
+  -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* для Chrome, Safari и Opera */
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* для Chrome, Safari и Opera */
+}
+
+.d-display-desktop {
+  display: flex !important;
+}
+.d-display-mob {
+  display: none !important;
+}
+@media (max-width: $mob) {
+  .d-display-desktop {
+    display: none !important;
+  }
+  .d-display-mob {
+    display: flex !important;
+  }
+  html {
+    font-size: 4.0712468vw;
+  }
+}
+
+@import "./sections/start-section";

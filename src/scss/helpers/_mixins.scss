@@ -1,0 +1,17 @@
+@mixin font-archivo($size, $height, $color, $weight, $style: normal) {
+  font-family: "Archivo";
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+}
+
+@mixin font-chakra($size, $height, $color, $weight, $style: normal) {
+  font-family: "Chakra Petch";
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+}
